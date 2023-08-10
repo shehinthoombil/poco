@@ -1,0 +1,335 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+    overflow-y: scroll;
+}
+body {
+    font-family: Roboto, "Helvetica Neue", Helvetica,Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    background-color: #010203;
+
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    width: 100%;
+}
+header {
+    background: linear-gradient(180deg, #101010 0, #161616 100%);
+    height: 61.6px;
+    border-top: 2px solid #ffd400;
+}
+header .header {
+    display: flex;
+    align-items: center;
+    width: 1226px;
+    margin: 0 auto;
+}
+header .left {
+    display: flex;
+    align-items: center;
+}
+header .logo {
+    height: 60px;
+    display: flex;
+    width: 106px;
+    margin-left: 50px;
+}
+header ul {
+    display: flex;
+    margin-left: 50px;
+    list-style: none;
+    align-items: center;
+}
+header ul li {
+    margin-left: 21px;
+    margin-right: 20px;
+    position: relative;
+    line-height: 40px;
+}
+header ul li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    margin-top: -6px;
+    top: 20px;
+    width: 1px;
+    background-color: #ddd;
+    left: -20px;
+    text-align: left;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    user-select: none;
+}
+header .right {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/*body*/
+
+.slider {
+    width: 100%;
+    height: 80vh;
+    background-size: auto;
+    background-position: center;
+    background-image: url(POCO\ X5\ PRO\ 5G.jpg);
+  }
+  
+  .shop-categories {
+    float: right;
+    margin-left: 1519px;
+    justify-content: center;
+    display: flex;
+    width: 1209px;
+    height: 88px;
+    align-items: center;
+  }
+  
+  .shop-categories a {
+    color: rgb(221 221 221);
+    margin-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 32px;
+    font-weight: 600;
+    font-size: 14.5px;
+  }
+  .shop-categories a:hover {
+    color: rgb(255, 212, 0);
+  }
+  
+  .container2 {
+    width: 1226px;
+    height: 270px;
+    background: #000;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .container2 a {
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  
+  .container3 > div {
+    width: 1226px;
+    background: #000;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .container3 h2 {
+    background: #000;
+    color: rgb(255 255 255);
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .container3 div a:not(:last-child) {
+    padding-right: 15px;
+  }
+  .container3 div a {
+    position: relative;
+    color: #fff;
+  }
+  
+  .container3 div a .wrapper {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .play-icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 200ms ease;
+    position: relative;
+  }
+  
+  .container3 div a .wrapper span{
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+      margin-top: 20px;
+      display: block;
+  
+  }
+  
+  .play-icon .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 12.5px 0 12.5px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container3 div a:hover .play-icon {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  /* footers */
+
+  footer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-container {
+    width: 1226px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  
+  .footer1 {
+    width: 100%;
+    height: 118px;
+    background-color: #161718;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    display: flex;
+  }
+  
+  /* footer1 leftside */
+  footer .left {
+    display: flex;
+    font-weight: 400;
+  }
+  footer .left .s1 {
+    flex-shrink: 0;
+    padding-right: 40px;
+  }
+  footer .left input {
+    background: transparent;
+    border: 1px solid;
+    color: #888;
+    padding: 2px 40px 2px 17px;
+    min-width: calc(209px + 57px);
+    height: 39.6px;
+  }
+  footer .left h3,
+  footer .right h3 {
+    font-size: 20px;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .relative i {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: #888888;
+  }
+  
+  /* footer1 right side */
+  
+  footer .right {
+    display: flex;
+    font-weight: 400;
+  }
+  
+  footer .right div {
+    padding-left: 200px;
+    padding-right: auto;
+  }
+  
+  footer .right ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 40px;
+    align-items: stretch;
+  }
+  footer .right s2 {
+    margin-left: 14px;
+  }
+  footer .right h3,
+  footer .left h3 {
+    font-size: 20px;
+  }
+  
+  footer .right p,
+  footer .left p {
+    font-size: 12px;
+    color: #888888;
+    font-weight: 400;
+  }
+  footer .right ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .right ul a {
+    color: #888888;
+    background-color: transparent;
+    padding: 0 18px;
+    display: flex;
+    font-size: 22px;
+  }
+  
+  /* footer2 */
+  .footer2 {
+    padding: 40px 0;
+  }
+  .footer2 dt {
+    color: #fff;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 14px;
+    width: 200px;
+  }
+  .footer2 dd {
+    color: #b0b0b0;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .footer2 dd:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* footer3 */
+  .copyright {
+    width: 1226px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70.8px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .copyright p {
+    float: left;
+    color: #b0b0b0;
+    font-size: 14px;
+  }
